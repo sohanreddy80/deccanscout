@@ -1,47 +1,163 @@
-# DeccanScout: Multi-Agent Talent Sourcing Platform
+# DeccanScout — Multi-Agent Talent Intelligence Platform
 
-## Problem
-Recruiters spend too much time manually sourcing and ranking candidates.
+## Overview
+DeccanScout is an AI-powered multi-agent recruiting platform that helps recruiters source, rank and shortlist candidates using autonomous agents and live profile retrieval.
 
-## Solution
-DeccanScout is a multi-agent AI recruiting platform that:
-- Parses job descriptions
-- Retrieves live candidate profiles
-- Scores and ranks candidates
-- Simulates recruiter outreach interest
-- Produces explainable shortlists
+---
 
-## Multi-Agent Architecture
-Agent 1 — JD Parsing Agent
-Agent 2 — Candidate Retrieval Agent
-Agent 3 — Match Ranking Agent
-Agent 4 — Recruiter Copilot Agent
+## Problem Statement
+Recruiters spend significant time manually searching, screening and prioritizing candidates.
+
+DeccanScout automates:
+- Job description parsing
+- Candidate sourcing
+- Candidate ranking
+- Recruiter copilot recommendations
+- Interview workflow support
+
+---
+
+# System Architecture
+
+```text
+                    +----------------------+
+                    |   Recruiter User      |
+                    +----------+-----------+
+                               |
+                               v
+                  +---------------------------+
+                  | PHP Recruiter Platform     |
+                  | Login + Dashboard + UI     |
+                  +------------+--------------+
+                               |
+                               v
+
+                    +----------------------+
+                    | Job Description Input |
+                    +----------+-----------+
+                               |
+                               v
+
+        +--------------------------------------------+
+        | Agent 1: Perception / JD Parsing Agent     |
+        | Skills Extraction + Role Understanding     |
+        +----------------+---------------------------+
+                         |
+                         v
+
+        +--------------------------------------------+
+        | Agent 2: Live Retrieval Agent              |
+        | Real-time Candidate Search (Serper)        |
+        +----------------+---------------------------+
+                         |
+                         v
+
+        +--------------------------------------------+
+        | Agent 3: Reasoning / Ranking Agent         |
+        | Match Score + Interest Score               |
+        +----------------+---------------------------+
+                         |
+                         v
+
+        +--------------------------------------------+
+        | Agent 4: Recruiter Copilot Decision Agent  |
+        | Explainability + Shortlisting              |
+        +----------------+---------------------------+
+                         |
+                         v
+
+             +-------------------------------+
+             | Ranked Candidates / Shortlist |
+             +-------------------------------+
+                         |
+             +-----------+-----------+
+             |                       |
+             v                       v
+
+   +------------------+   +----------------------+
+   | MySQL Database    |   | Interview Scheduling |
+   | Recruiters        |   | Workflow Module      |
+   | Candidate Memory  |   +----------------------+
+   +------------------+
+```
+
+---
+
+## Multi-Agent Workflow
+
+1. Recruiter enters Job Description
+
+2. JD Parsing Agent extracts:
+- skills
+- role requirements
+- filters
+
+3. Retrieval Agent sources live candidate profiles.
+
+4. Ranking Agent scores candidates using:
+- Skill Match (50%)
+- Experience Fit (30%)
+- Interest Signals (20%)
+
+5. Recruiter Copilot produces explainable shortlist.
+
+---
 
 ## Tech Stack
-Frontend: PHP, HTML, CSS, JavaScript
-Backend: PHP
-Database: MySQL
-Search API: Serper
-Hosting: AeonFree
-Prototype Agent: Replit
+
+### Frontend
+- PHP
+- HTML
+- CSS
+- JavaScript
+
+### Backend
+- PHP
+
+### Database
+- MySQL
+
+### AI / Agents
+- Serper Search API
+- Retrieval Agent
+- Ranking Agent
+- Recruiter Copilot
+
+### Hosting
+- AeonFree
+- Replit
+
+---
 
 ## Features
-- Recruiter Login/Auth
-- Live profile sourcing
-- Candidate scoring
-- Explainable ranking
-- Shortlisting workflow
+- Recruiter Authentication
+- Live Candidate Search
+- Multi-Agent Candidate Ranking
+- Explainable Shortlisting
+- Recruiter Copilot Dashboard
+- Interview Scheduling Workflow
+
+---
 
 ## Innovation
-Combines live search + autonomous multi-agent decision flow for recruiting.
+DeccanScout combines:
+- autonomous multi-agent reasoning
+- live data retrieval
+- explainable ranking
+- recruiter decision support
 
-## Setup
-1. Import SQL tables
-2. Configure db_connect.php
-3. Add Serper API key
-4. Run project
+into a single recruiting platform.
 
-## Future Scope
-- Real LinkedIn outreach
-- Resume parsing
-- Interview scheduling agent
+---
+
+## Demo
+Project Site:
+[Add Your Live URL]
+
+Demo Video:
+[Add YouTube Link]
+
+---
+
+## GitHub Repository
+[Add Repo URL]
