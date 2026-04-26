@@ -152,12 +152,12 @@ into a single recruiting platform.
 
 ## Demo
 Project Site:
-[Add Your Live URL]
+https://deccanscout.iceiy.com
 
 Demo Video:
-[Add YouTube Link]
+https://youtu.be/r0jvC1Bk73I
 
 ---
 
 ## GitHub Repository
-[Add Repo URL]
+https://github.com/sohanreddy80/deccanscout
